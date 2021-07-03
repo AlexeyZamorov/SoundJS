@@ -117,6 +117,7 @@ this.createjs = this.createjs || {};
 	};
 
 	var p = createjs.extend(XHRRequest, createjs.AbstractRequest);
+	var s = XHRRequest;
 
 // static properties
 	/**
@@ -126,7 +127,7 @@ this.createjs = this.createjs || {};
 	 * @since 0.4.2
 	 * @private
 	 */
-	XHRRequest.ACTIVEX_VERSIONS = [
+	s.ACTIVEX_VERSIONS = [
 		"Msxml2.XMLHTTP.6.0",
 		"Msxml2.XMLHTTP.5.0",
 		"Msxml2.XMLHTTP.4.0",
